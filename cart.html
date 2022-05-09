@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scal=1 shrink-to-fit=0">
+	<title>cart</title>
+	 <link rel="icon"  href="images/product1.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+	
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark menu">
+    	<div class="container">
+    		<div class="logo">
+      <a class="navbar-brand" href="#">SOPPY<span>KART</span></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav menu1 m-auto">
+          <li><a class="nav-link " href="index.html">HOME</a></li>
+            <li><a class="nav-link " href="about.html">ABOUT US</a></li>
+             <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="Products.html">Products</a>
+              <a class="dropdown-item" href="single.html">Product single</a>
+              <a class="dropdown-item" href="#">Products Cart</a>
+            </div>
+          </li>
+              <!-- <li><a class="nav-link" href="#">PRODUCTS</a></li> -->
+                <li><a class="nav-link" href="page.html">PAGES</a></li>
+                  <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+                  <li><a href="#"><i class="fa fa-search "></i></a></li>
+       
+        </ul>
+        
+      <div class="menu1">
+          <form class="form-inline mt-2 mt-md-0">
+       
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-user">&nbsp;</i>Login</button>&nbsp;&nbsp; &nbsp;&nbsp;
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> <i class="fa fa-briefcase"> &nbsp;</i>Cart</button>
+        </form>
+       </div>
+      </div>
+      </div>
+    </nav>
+<div class="banner" >
+	<div class="container">
+		<div class="row mt-5">
+			<div class="col-md-6 mt-5 "data-aos="fade-down" data-aos-duration="2500">
+				<h1>Cart</h1>
+			</div>
+			<div class="col-md-6 mt-5"  data-aos="fade-up" data-aos-duration="2500">
+				<div class="about">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><i class="fa fa-arrow-right"></i></li>
+						<li>Products Cart</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="check mt-5">
+	<div class="container">
+		<h3 data-aos="fade-down"
+     data-aos-duration="3000">Checkout</h3>
+		<h5>Your shopping cart contains: 3 Products</h5>
+		<div class="out">
+			
+		<div class="row mt-5">
+				
+                 <div class="col-md-1 col-1 space">
+				<div class="no text-center">
+					<h5>SL No.</h5>
+				</div>
+				</div>
+				<div class="col-md-4  col-4 space">
+					<div class="no text-center">
+					<h5>Product</h5>
+				</div>
+				</div>
+				<div class="col-md-2 col-2 space">
+					<div class="no text-center">
+					<h5>Quality</h5>
+				</div>
+				</div>
+				<div class="col-md-3 col-3 space">
+					<div class="no text-center">
+					<h5>Product Name</h5>
+				</div>
+				</div>
+				<div class="col-md-1 col-1 space">
+					<div class="no text-center">
+					<h5>Price</h5>
+				</div>
+				</div>
+				<div class="col-md-1 col-1 space">
+					<div class="no text-center">
+					<h5>Remove</h5>
+				</div>
+				</div>
+
+
+
+			</div>
+
+			<div class="row mt">
+				
+                 <div class="col-md-1  col-1  space">
+				<div class="no1 text-center">
+					<h5>1</h5>
+				</div>
+				</div>
+				<div class="col-md-4   col-4  space">
+					<div class="no1 text-center">
+						<div class="no2">
+							<img src="images/us3.jpg" class="img-fluid">
+						</div>
+					
+				</div>
+				</div>
+				<div class="col-md-2 col-2 space">
+					<div class="no1 text-center">
+					
+						 <div class="value">
+						 	   <div class="form-group">
+        <!-- <label>Quantity: </label> -->
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button1 id="down" class="btn btn1-default" onclick=" down('0')"><i class="fa fa-minus"></i></button1>
+            </div>
+            <input type="text" id="myNumber" class="form-control input-number" value="1" />
+            <div class="input-group-btn">
+                <button1 id="up" class="btn btn1-default" onclick="up('10')"><i class="fa fa-plus"></i></button1>
+            </div>
+        </div>
+    </div>
+
+						 </div>
+				</div>
+				</div>
+				<div class="col-md-3 col-3 space">
+					<div class="no1 text-center">
+					<h6>Checkered Casual Shirt</h6>
+				</div>
+				</div>
+				<div class="col-md-1 col-1 space">
+					<div class="no1 text-center">
+					<h5>$899.00</h5>
+				</div>
+				</div>
+				<div class="col-md-1 col-1  space">
+					<div class="no1 text-center">
+					<h5></h5>
+				</div>
+				</div>
+
+
+
+			</div>
+		
+
+			<div class="row mt">
+				
+                 <div class="col-md-1 col-1 space">
+				<div class="no1 text-center">
+					<h5>2</h5>
+				</div>
+				</div>
+				<div class="col-md-4 col-4 space">
+					<div class="no1 text-center">
+						<div class="no2">
+							<img src="images/us4.jpg" class="img-fluid">
+						</div>
+					
+				</div>
+				</div>
+				<div class="col-md-2 col-2 space">
+					<div class="no1 text-center">
+					
+						 <div class="value">
+						 	   <div class="form-group">
+        <!-- <label>Quantity: </label> -->
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button1 id="down" class="btn btn1-default" onclick=" down('0')"><i class="fa fa-minus"></i></button1>
+            </div>
+            <input type="text" id="myNumber" class="form-control input-number" value="1" />
+            <div class="input-group-btn">
+                <button1 id="up" class="btn btn1-default" onclick="up('10')"><i class="fa fa-plus"></i></button1>
+            </div>
+        </div>
+    </div>
+
+						 </div>
+				</div>
+				</div>
+				<div class="col-md-3 col-3 space">
+					<div class="no1 text-center">
+					<h6>Cotton Flared Kurta</h6>
+				</div>
+				</div>
+				<div class="col-md-1 col-1 space">
+					<div class="no1 text-center">
+					<h5>$599.00</h5>
+				</div>
+				</div>
+				<div class="col-md-1 col-1 space">
+					<div class="no1 text-center">
+					<h5></h5>
+				</div>
+				</div>
+
+
+
+			</div>
+
+
+
+			<div class="row mt">
+				
+                 <div class="col-md-1 col-1 space">
+				<div class="no1 text-center">
+					<h5>3</h5>
+				</div>
+				</div>
+				<div class="col-md-4 col-4 space">
+					<div class="no1 text-center">
+						<div class="no2">
+							<img src="images/us8.jpg" class="img-fluid">
+						</div>
+					
+				</div>
+				</div>
+				<div class="col-md-2 col-2 space">
+					<div class="no1 text-center">
+					
+						 <div class="value">
+						 	   <div class="form-group">
+        <!-- <label>Quantity: </label> -->
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button1 id="down" class="btn btn1-default" onclick=" down('0')"><i class="fa fa-minus"></i></button1>
+            </div>
+            <input type="text" id="myNumber" class="form-control input-number" value="1" />
+            <div class="input-group-btn">
+                <button1 id="up" class="btn btn1-default" onclick="up('10')"><i class="fa fa-plus"></i></button1>
+            </div>
+        </div>
+    </div>
+
+						 </div>
+				</div>
+				</div>
+				<div class="col-md-3 col-3 space">
+					<div class="no1 text-center">
+					<h6>Men Casual Shirt</h6>
+				</div>
+				</div>
+				<div class="col-md-1 col-1 space">
+					<div class="no1 text-center">
+					<h5>$799.00	
+</h5>
+				</div>
+				</div>
+				<div class="col-md-1 col-1 space">
+					<div class="no1 text-center">
+					<h5></h5>
+				</div>
+				</div>
+
+
+
+			</div>
+
+
+		</div>
+
+		
+	</div>
+</div>
+<div class="basket text-center">
+<div class="container">
+	<div class="row mt-5">
+			<div class="col-md-4">
+			<h5>Continue To Basket</h5>
+			<div class="row mt-3">
+				<div class="col-md-6">
+					<div class="charge">
+						<h6 style="color: #ccc9; margin-left:-50%;">Product1 -</h6>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="charge1">
+						<h6 style="color: #ccc9; margin-left:54%;">$599.00</h6>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-md-6">
+					<div class="charge">
+						<h6 style="color: #ccc9; margin-left:-50%;">Product1 -</h6>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="charge1">
+						<h6 style="color: #ccc9; margin-left:54%;">$599.00</h6>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-md-6">
+					<div class="charge">
+						<h6 style="color: #ccc9; margin-left:-50%;">Product1 -</h6>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="charge1">
+						<h6 style="color: #ccc9; margin-left:54%;">$599.00</h6>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-md-6">
+					<div class="charge">
+						<h6 style="color: #ccc9; margin-left:-50%;">Product1 -</h6>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="charge1">
+						<h6 style="color: #ccc9; margin-left:54%;">$599.00</h6>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row mt-3">
+				<div class="col-md-12">
+					<div class="line">
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class="col-md-6">
+					<div class="charge">
+						<h6 style="color: #fff; margin-left:-50%;">Total -</h6>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="charge1">
+						<h6 style="color: #fff; margin-left:54%;">$2297.00</h6>
+					</div>
+				</div>
+			</div>
+
+				<div class="row mt-3">
+				<div class="col-md-12">
+					<div class="line">
+						
+					</div>
+				</div>
+			</div>
+
+				</div>
+
+					<div class="col-md-8">
+						<div class="add text-left">
+						<h3 style="color: #fff;">Add a new Details</h3>
+						<form>
+							<input type="text" placeholder="   Full name">
+							<input type="text" placeholder="   Mobile number">
+							<input type="text" placeholder="   Land Mark">
+							<input type="text" placeholder="   Town/city">
+              <div class="select1 ">
+              							<select  name="pets" id="pet-select">
+	<option value="">--Please choose an option--</option>
+	<option >Home</option>
+	<option >Office</option>
+	<option>Commercial</option>
+	
+</select>
+<a href="#">Delivery To This Address</a>
+              </div>
+
+						</form>
+					</div>
+					</div>
+
+
+			</div>
+</div>
+		</div>
+
+		<div class="footer text-left">
+      	<div class="container">
+      		<h1  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">Special Offer All Branded Sandals Are<br>
+Flat 50% Discount</h1>
+      <div class="row mt-5">
+	   <div class="col-md-3" data-aos="fade-right"
+     data-aos-duration="3000">
+	   	<h3>USeful Links</h3>
+	   	<ul>
+	   		<li><a href="#">Home</a></li>
+	   		<li><a href="#">About</a></li>
+	   		<li><a href="#">Blogs</a></li>
+	   		<li><a href="#">Contact</a></li>
+	   		
+
+	   	</ul>
+	   </div>
+
+	    <div class="col-md-3" data-aos="fade-up"
+     data-aos-duration="3000">
+	   	<h3>Information</h3>
+	   	<ul>
+	   		<li><a href="#">Tream & Conditions</a></li>
+	   		<li><a href="#">Delivery Terms</a></li>
+	   		<li><a href="#">Order Tracking</a></li>
+	   		<li><a href="#">Contact</a></li>
+	   		
+
+	   	</ul>
+	   </div>
+
+
+	    <div class="col-md-3" data-aos="fade-down"
+     data-aos-duration="3000">
+	   	<h3>Address</h3>
+	   	<p>London, UK<br>
+998 13h Street, Office 436<br>
+Harlo 61466<br>
++(21) 255 999 8888<br>
+ShoppyKart@mail.com</p>
+	   </div>
+	   <div class="col-md-3 " data-aos="fade-left"
+     data-aos-duration="3000">
+	   		<h3>Payment Method</h3>
+	   		<div class="dis">
+        <div class="row mt-4 ">
+          <div class="col-md-3  col-3 " >
+            <i class="fa fa-cc-visa"></i>
+          </div>
+          <div class="col-md-3 col-3">
+            <i class="fa fa-cc-discover"></i>
+          </div>
+          <div class="col-md-3 col-3">
+            <i class="fa fa-cc-paypal"></i>
+          </div>
+          <div class="col-md-3 col-3">
+            <i class="fa fa-cc-mastercard"></i>
+          </div>
+          <div class="col-md-3 mt-3 col-3">
+            <i class="fa fa-cc-stripe"></i>
+          </div>
+          <div class="col-md-3 mt-3 col-3">
+            <i class="fa fa-cc-amex"></i>
+          </div>
+          <div class="col-md-3 mt-3 col-3">
+            <i class="fa fa-cc-jcb"></i>
+          </div>
+        </div>  
+        </div>
+	   </div>
+      </div>	
+
+      <div class="row mt-5 space">
+      	<div class="col-md-6 space">
+      		<p>© 2021 ShoppyKart. All rights reserved | Designed by Ishwar</p>
+      	</div>
+      	<div class="col-md-6 space" >
+      		<div class="social">
+      			<ul >
+      				<li ><a href="#"><i class="fa fa-facebook"></i></a></li>
+      				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      			</ul>
+      		</div>
+      	</div>
+      </div>
+      	</div>	
+      </div>
+      <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+  
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+<script>
+	
+	function up(max) {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+    if (document.getElementById("myNumber").value >= parseInt(max)) {
+        document.getElementById("myNumber").value = max;
+    }
+}
+function down(min) {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+    if (document.getElementById("myNumber").value <= parseInt(min)) {
+        document.getElementById("myNumber").value = min;
+    }
+}
+
+</script>
+</html>
